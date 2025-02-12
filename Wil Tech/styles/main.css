@@ -1,0 +1,192 @@
+/* Estilos generales */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.hero-section {
+  background: url('../assets/images/fondo.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 200px 0;
+  text-align: center;
+  position: relative;
+  background-attachment: fixed; /* Efecto parallax */
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.hero-section .lead {
+  font-size: 1.75rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* Botón de WhatsApp */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+/* Chat en vivo */
+.chat-box {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+}
+
+body.dark-mode .chat-box {
+  background-color: #1e1e1e;
+  border-color: #444;
+}
+
+.chat-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-body {
+  padding: 10px;
+  height: 200px;
+  overflow-y: auto;
+}
+
+.chat-footer {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  display: flex;
+}
+
+#chat-input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#send-message {
+  margin-left: 10px;
+}
+
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 80px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  z-index: 1000;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.chat-button:hover {
+  transform: scale(1.1);
+}
+
+/* Efectos de hover en tarjetas */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Barras de progreso */
+.progress {
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  background-color: #007bff;
+}
+
+/* Pie de página */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #007bff;
+}
+
+/* Botón de Dark Mode */
+#dark-mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}

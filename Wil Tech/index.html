@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will_Tech | Soluciones Informáticas Profesionales</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Will Tech</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección Inicio con efecto parallax -->
+  <section id="inicio" class="hero-section">
+    <div class="container text-center">
+      <h1>Will Tech</h1>
+      <p class="lead">Soluciones Informáticas Profesionales</p>
+      <a href="#contacto" class="btn btn-primary btn-lg">Contáctame</a>
+    </div>
+  </section>
+
+  <!-- Sección Sobre mí -->
+  <section id="sobre-mi" class="section">
+    <div class="container">
+      <h2 class="text-center mb-5">Sobre mí</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="assets/images/perfil.jpg" alt="Wilmar Peinado" class="img-fluid rounded-circle shadow-lg">
+        </div>
+        <div class="col-md-6">
+          <p class="lead">Hola, soy Wilmar Peinado, Técnico Informático con años de experiencia en el sector tecnológico. Me especializo en:</p>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-check-circle text-primary me-2"></i>Soporte técnico y mantenimiento de sistemas.</li>
+            <li><i class="fas fa-check-circle text-primary me-2"></i>Desarrollo de soluciones web y aplicaciones.</li>
+            <li><i class="fas fa-check-circle text-primary me-2"></i>Ensamblado y mantenimiento de computadora </li>
+            <li><i class="fas fa-check-circle text-primary me-2"></i>Instalación, configuración y actualización de S.O y Software.</li>
+            <li><i class="fas fa-check-circle text-primary me-2"></i>Instalación de antivirus, firewalls, copias de seguridad</li>
+            <li><i class="fas fa-check-circle text-primary me-2"></i>Diseño Grafico.</li>
+            <li><i class="fas fa-check-circle text-primary me-2"></i>Gestión de redes </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Habilidades -->
+  <section id="habilidades" class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Habilidades Técnicas</h2>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <i class="fas fa-network-wired fa-3x mb-3 text-primary"></i>
+          <h4>Redes y Seguridad</h4>
+          <div class="progress">
+            <div class="progress-bar" style="width: 90%;">90%</div>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <i class="fas fa-code fa-3x mb-3 text-primary"></i>
+          <h4>Desarrollo Web</h4>
+          <div class="progress">
+            <div class="progress-bar" style="width: 85%;">85%</div>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <i class="fas fa-tools fa-3x mb-3 text-primary"></i>
+          <h4>Soporte Técnico</h4>
+          <div class="progress">
+            <div class="progress-bar" style="width: 95%;">95%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Portafolio -->
+  <section id="portafolio" class="section">
+    <div class="container">
+      <h2 class="text-center mb-5">Portafolio</h2>
+      <div class="row" id="proyectos-container">
+        <!-- Proyectos cargados dinámicamente -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contacto -->
+  <section id="contacto" class="section">
+    <div class="container">
+      <h2 class="text-center mb-5">Contacto</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Registro de Clientes</h4>
+          <form id="registro-form">
+            <div class="mb-3">
+              <label for="nombre-cliente" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre-cliente" required>
+            </div>
+            <div class="mb-3">
+              <label for="email-cliente" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email-cliente" required>
+              <div id="email-error" class="text-danger" style="display:none;">Por favor, introduce un correo electrónico válido.</div>
+            </div>
+            <div class="mb-3">
+              <label for="telefono-cliente" class="form-label">Teléfono</label>
+              <input type="tel" class="form-control" id="telefono-cliente" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h4>Deja tu consulta</h4>
+          <form id="consulta-form">
+            <div class="mb-3">
+              <label for="email-consulta" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email-consulta" required>
+              <div id="consulta-email-error" class="text-danger" style="display:none;">Por favor, introduce un correo electrónico válido.</div>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje-consulta" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje-consulta" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar consulta</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Botón de WhatsApp -->
+  <a href="https://wa.me/59175620492" class="whatsapp-button" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Botón de Dark Mode -->
+  <button id="dark-mode-toggle" class="btn btn-primary">Modo Oscuro</button>
+
+  <!-- Chat en vivo -->
+  <div id="chat-box" class="chat-box">
+    <div class="chat-header">
+      <span>Chat en vivo</span>
+      <button id="close-chat">&times;</button>
+    </div>
+    <div class="chat-body">
+      <div id="chat-messages"></div>
+    </div>
+    <div class="chat-footer">
+      <input type="text" id="chat-input" placeholder="Escribe un mensaje...">
+      <button id="send-message">Enviar</button>
+    </div>
+  </div>
+  <button id="open-chat" class="chat-button">
+    <i class="fas fa-comments"></i>
+  </button>
+
+  <!-- Pie de página -->
+  <footer class="footer bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2025 - Will_Tech. Todos los derechos reservados.</p>
+      <p>Contacto: <a href="mailto:wilmxr@hotmail.com" class="text-white">wilmxr@hotmail.com</a></p>
+      <div class="social-links">
+        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
